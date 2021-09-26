@@ -50,8 +50,8 @@ function DisplayCard(props){
                 </Select>
             </FormControl>
         </Box>
-        <Typography component="span" align="right">Page: {page}</Typography>
-        <ImageList sx={{}} cols={2} rowHeight={164}>
+        <Typography sx={{color: 'text.disabled'}}component='span'>Page: {page}</Typography>
+        <ImageList cols={2} rowHeight={164}>
         {
         data.map((ele,i)=>
         <Card sx={{ display: 'flex',
