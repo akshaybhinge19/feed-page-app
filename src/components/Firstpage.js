@@ -6,10 +6,10 @@ function Firstpage() {
     const [result,setResult]=useState([]);
     const [err,setErr]=useState(false);
     useEffect(()=>{
-        fetch('http://www.mocky.io/v2/59b3f0b0100000e30b236b7e')
+        fetch('https://www.mocky.io/v2/59b3f0b0100000e30b236b7e')
         .then((response)=>response.json())
         .then((result)=>{
-            console.log(result.posts);
+            // console.log(result.posts);
             setResult(result.posts);
             if(!localStorage.getItem('page1')){
                 localStorage.setItem('page1',JSON.stringify(result.posts));

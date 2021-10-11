@@ -6,10 +6,10 @@ function Secondpage() {
     const [result,setResult]=useState("");
     const [err,setErr]=useState(false);
     useEffect(()=>{
-        fetch('http://www.mocky.io/v2/59ac28a9100000ce0bf9c236')
+        fetch('https://www.mocky.io/v2/59ac28a9100000ce0bf9c236')
         .then((response)=>response.json())
         .then((result)=>{
-            console.log(result.posts);
+            // console.log(result.posts);
             // let obj = JSON.parse(res);
             setResult(result.posts);
             if(!localStorage.getItem('page2')){
